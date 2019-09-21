@@ -1,0 +1,34 @@
+.banner {
+    width: 70vw;
+    height: 80vh;
+    margin: 2rem auto;
+    position: relative;
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 2px 60px rgba(0, 0, 0, 0.4);
+    overflow-x: hidden;
+
+    &__bg {
+        height: 200px;
+        width: 600%;
+        background-image: url('../img/bg2.svg');
+        background-repeat: repeat-x;
+        display: block;
+        position: absolute;
+        bottom: 0%;
+        animation: moveBg 15s linear infinite;
+    }
+
+    &__van {
+        z-index: 10;
+        position: absolute;
+        bottom: 30px;
+        left: 20%;
+        animation: moveVan 1s linear infinite;
+
+        img {
+            width: 200px;
+        }
+    }
+}

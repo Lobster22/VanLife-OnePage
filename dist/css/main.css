@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@-webkit-keyframes moveBg {
+  100% {
+    -webkit-transform: translateX(-2950px);
+            transform: translateX(-2950px);
+  }
+}
+
+@keyframes moveBg {
+  100% {
+    -webkit-transform: translateX(-2950px);
+            transform: translateX(-2950px);
+  }
+}
+
+@-webkit-keyframes moveVan {
+  100% {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+  }
+  50% {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+  0% {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+  }
+}
+
+@keyframes moveVan {
+  100% {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+  }
+  50% {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+  0% {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+  }
+}
+
+.banner {
+  width: 70vw;
+  height: 80vh;
+  margin: 2rem auto;
+  position: relative;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  -webkit-box-shadow: 1px 2px 60px rgba(0, 0, 0, 0.4);
+          box-shadow: 1px 2px 60px rgba(0, 0, 0, 0.4);
+  overflow-x: hidden;
+}
+
+.banner__bg {
+  height: 200px;
+  width: 600%;
+  background-image: url("../img/bg2.svg");
+  background-repeat: repeat-x;
+  display: block;
+  position: absolute;
+  bottom: 0%;
+  -webkit-animation: moveBg 15s linear infinite;
+          animation: moveBg 15s linear infinite;
+}
+
+.banner__van {
+  z-index: 10;
+  position: absolute;
+  bottom: 30px;
+  left: 20%;
+  -webkit-animation: moveVan 1s linear infinite;
+          animation: moveVan 1s linear infinite;
+}
+
+.banner__van img {
+  width: 200px;
+}
+
+body {
+  background-color: #00013A;
+  overflow-y: hidden;
+}
+/*# sourceMappingURL=main.css.map */

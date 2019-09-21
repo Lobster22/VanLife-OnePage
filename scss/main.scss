@@ -1,0 +1,8 @@
+@import 'config';
+@import 'animation';
+@import 'banner';
+
+body {
+    background-color: $color-one;
+    overflow-y: hidden;
+}

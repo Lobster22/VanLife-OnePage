@@ -1,0 +1,9 @@
+@keyframes moveBg {
+    100% {transform: translateX(-2950px)}
+}
+
+@keyframes moveVan {
+    100% {transform: translateY(-1px)}
+    50% {transform: translateY(2px)}
+    0% {transform: translateY(-1px)}
+}
