@@ -1,8 +1,32 @@
 @import 'config';
 @import 'animation';
+@import 'socials';
+@import 'header';
 @import 'banner';
 
 body {
-    background-color: $color-one;
-    overflow-y: hidden;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    font-family: $family-main;
+}
+
+a {
+    color: $font-color-one;
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.btn {
+    padding: .5rem 2rem;
+    background-color: transparent;
+    border: 1px solid $font-color-one;
+    border-radius: 30px;
+    color: $font-color-one;
 }

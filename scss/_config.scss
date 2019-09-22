@@ -1,8 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two:400i,700i|Source+Sans+Pro:300,400,400i,600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+// Colors.
+$font-color-one: #ffffff;
 $color-one: #00013A;
 $color-two: #822764;
+
+// Fonts.
+$family-accent: 'Lobster Two', cursive;
+$family-main: 'Source Sans Pro', sans-serif;

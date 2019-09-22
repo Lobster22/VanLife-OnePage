@@ -1,12 +1,11 @@
 .banner {
-    width: 70vw;
-    height: 80vh;
-    margin: 2rem auto;
+    //width: 70vw;
+    height: 555px;
+    //margin: 2rem auto;
     position: relative;
     background-image: url('../img/bg.jpg');
     background-size: cover;
     background-position: center;
-    box-shadow: 1px 2px 60px rgba(0, 0, 0, 0.4);
     overflow-x: hidden;
 
     &__bg {
