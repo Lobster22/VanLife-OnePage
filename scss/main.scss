@@ -3,11 +3,13 @@
 @import 'socials';
 @import 'header';
 @import 'banner';
+@import 'quotes';
 
 body {
     background-color: #ffffff;
     overflow-x: hidden;
     font-family: $family-main;
+    font-size: 16px;
 }
 
 a {
@@ -29,4 +31,8 @@ ul, ol {
     border: 1px solid $font-color-one;
     border-radius: 30px;
     color: $font-color-one;
+}
+
+.vanlife {
+    font-family: $family-accent;
 }

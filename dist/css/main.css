@@ -116,10 +116,6 @@ header article h1 {
   font-weight: 500;
 }
 
-header article h1 .vanlife {
-  font-family: "Lobster Two", cursive;
-}
-
 header .banner-svg {
   -webkit-clip-path: url(#banner-clip-path);
           clip-path: url(#banner-clip-path);
@@ -159,10 +155,30 @@ header .banner-svg {
   width: 200px;
 }
 
+.quotes {
+  background-image: url("../img/quotes-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  height: 55vh;
+  text-align: center;
+  font-size: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 body {
   background-color: #ffffff;
   overflow-x: hidden;
   font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
 }
 
 a {
@@ -184,5 +200,9 @@ ul, ol {
   border: 1px solid #ffffff;
   border-radius: 30px;
   color: #ffffff;
+}
+
+.vanlife {
+  font-family: "Lobster Two", cursive;
 }
 /*# sourceMappingURL=main.css.map */
