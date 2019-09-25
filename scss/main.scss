@@ -5,11 +5,22 @@
 @import 'banner';
 @import 'quotes';
 
+html {
+    font-size: 14px;
+
+    @include tablet {
+        font-size: 16px;
+    }
+
+    @include desktop {
+        font-size: 18px;
+    }
+}
+
 body {
     background-color: #ffffff;
     overflow-x: hidden;
     font-family: $family-main;
-    font-size: 16px;
 }
 
 a {
@@ -26,11 +37,12 @@ ul, ol {
 }
 
 .btn {
-    padding: .5rem 2rem;
+    padding: .4rem 2rem;
     background-color: transparent;
     border: 1px solid $font-color-one;
     border-radius: 30px;
     color: $font-color-one;
+    cursor: pointer;
 }
 
 .vanlife {

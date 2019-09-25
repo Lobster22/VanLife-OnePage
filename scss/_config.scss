@@ -14,3 +14,29 @@ $color-two: #822764;
 // Fonts.
 $family-accent: 'Lobster Two', cursive;
 $family-main: 'Source Sans Pro', sans-serif;
+
+// Sizes of screens.
+$mobile: 321px;
+$tablet: 769px;
+$desktop: 1024px;
+$big-desktop: 1824px;
+
+// Mixins.
+@mixin flexCenter($direction: column) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin tablet {
+    @media (min-width: $mobile) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $tablet) {
+        @content;
+    }
+}

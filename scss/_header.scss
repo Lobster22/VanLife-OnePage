@@ -1,36 +1,57 @@
 header {
-    background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
+    background-image: url('../img/bg-mobile.jpg');
+    background-size: cover;
+    background-position: center;
     margin: 0 auto;
     width: 100vw;
     height: 100vh;
     //box-shadow: 1px 2px 60px rgba(0, 0, 0, 0.4);
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 100%;
     overflow: hidden;
 
+    @include desktop {
+        background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
+        grid-template-columns: 50% 50%;
+    }
+
     article {
+        @include flexCenter;
         width: 90%;
         height: 100%;
         text-align: center;
-        padding: 0 2rem;
         margin: 0 auto;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         color: $font-color-one;
 
+        @include tablet {
+            width: 50%;
+        }
+
         h1 {
+            font-size: 2.3rem;
             font-weight: 500;
+            margin-bottom: .6rem;
         }
 
         button {
+            font-size: 1rem;
+            margin-top: 1rem;
+            font-family: $family-accent;
 
+            &:hover {
+                // something here
+            }
         }
     }
 
     .banner-svg {
+        display: none;
         clip-path: url(#banner-clip-path);
+
+        @include desktop {
+            display: block;
+        }
     }
 
 }

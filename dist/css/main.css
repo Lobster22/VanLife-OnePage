@@ -52,8 +52,14 @@
 
 .socials {
   position: absolute;
-  bottom: 10%;
+  bottom: 5%;
   width: 100%;
+}
+
+@media (min-width: 769px) {
+  .socials {
+    bottom: 10%;
+  }
 }
 
 .socials ul {
@@ -74,51 +80,82 @@
 }
 
 .socials ul li i {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 header {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#7028e4), to(#e5b2ca));
-  background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
+  background-image: url("../img/bg-mobile.jpg");
+  background-size: cover;
+  background-position: center;
   margin: 0 auto;
   width: 100vw;
   height: 100vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
   overflow: hidden;
 }
 
+@media (min-width: 769px) {
+  header {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#7028e4), to(#e5b2ca));
+    background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+}
+
 header article {
-  width: 90%;
-  height: 100%;
-  text-align: center;
-  padding: 0 2rem;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 90%;
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
   color: #ffffff;
 }
 
+@media (min-width: 321px) {
+  header article {
+    width: 50%;
+  }
+}
+
 header article h1 {
+  font-size: 2.3rem;
   font-weight: 500;
+  margin-bottom: .6rem;
+}
+
+header article button {
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-family: "Lobster Two", cursive;
 }
 
 header .banner-svg {
+  display: none;
   -webkit-clip-path: url(#banner-clip-path);
           clip-path: url(#banner-clip-path);
+}
+
+@media (min-width: 769px) {
+  header .banner-svg {
+    display: block;
+  }
 }
 
 .banner {
@@ -156,6 +193,19 @@ header .banner-svg {
 }
 
 .quotes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-image: url("../img/quotes-bg.jpg");
   background-size: cover;
   background-position: center;
@@ -163,22 +213,28 @@ header .banner-svg {
   height: 55vh;
   text-align: center;
   font-size: 3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 321px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 769px) {
+  html {
+    font-size: 18px;
+  }
 }
 
 body {
   background-color: #ffffff;
   overflow-x: hidden;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 16px;
 }
 
 a {
@@ -195,11 +251,12 @@ ul, ol {
 }
 
 .btn {
-  padding: .5rem 2rem;
+  padding: .4rem 2rem;
   background-color: transparent;
   border: 1px solid #ffffff;
   border-radius: 30px;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .vanlife {
